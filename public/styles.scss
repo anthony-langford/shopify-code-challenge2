@@ -1,0 +1,32 @@
+$text-color: #30373B;
+$success-color: #7AB55C;
+$error-color: #C23628;
+$border-color: #A7A7A7;
+
+$body-font-size: 13px;
+$title-font-size: 32px;
+$subtitle-font-size: 20px;
+$form-font-size: 16px;
+
+body {
+  color: $text-color;
+  .title {
+    font-size: $title-font-size;
+    margin: 5% 0 0 5%;
+    width: 50%;
+    border: 3px solid $border-color;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .subtitle {
+    font-size: $subtitle-font-size;
+    border-color: $border-color;
+  }
+  .body {
+    font-size: $body-font-size;
+  }
+  .emailForm {
+    font-size: $form-font-size;
+  }
+}

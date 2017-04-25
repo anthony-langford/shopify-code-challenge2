@@ -1,0 +1,19 @@
+body {
+  color: #30373B; }
+  body .title {
+    font-size: 32px;
+    margin: 5% 0 0 5%;
+    width: 50%;
+    border: 3px solid #A7A7A7;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle; }
+  body .subtitle {
+    font-size: 20px;
+    border-color: #A7A7A7; }
+  body .body {
+    font-size: 13px; }
+  body .emailForm {
+    font-size: 16px; }
+
+/*# sourceMappingURL=styles.css.map */
