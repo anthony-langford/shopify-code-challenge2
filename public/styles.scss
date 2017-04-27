@@ -8,25 +8,64 @@ $title-font-size: 32px;
 $subtitle-font-size: 20px;
 $form-font-size: 16px;
 
+@font-face {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
 body {
   color: $text-color;
   .title {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
     font-size: $title-font-size;
-    margin: 5% 0 0 5%;
-    width: 50%;
-    border: 3px solid $border-color;
+    width: 60%;
+    margin: auto;
+    margin-top: 6%;
     padding: 10px;
     text-align: center;
     vertical-align: middle;
   }
+  hr {
+    width: 2%;
+    background-color: $success-color;
+    color: $success-color;
+    border: solid 1px $success-color;
+  }
   .subtitle {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     font-size: $subtitle-font-size;
-    border-color: $border-color;
+    width: 60%;
+    margin: auto;
+    padding: 10px 10px 30px 10px;
+    text-align: center;
+    vertical-align: middle;
   }
   .body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 600;
     font-size: $body-font-size;
+    width: 35%;
+    margin: auto;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+
+    .emailForm {
+      font-size: $form-font-size;
+      box-sizing: border-box;
+      .emailField {
+        font-size: $form-font-size;
+        width: 72%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid $border-color;
+        border-radius: 2px;
+        box-sizing: border-box;
+      }
+    }
+
   }
-  .emailForm {
-    font-size: $form-font-size;
-  }
+
 }

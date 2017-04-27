@@ -1,19 +1,51 @@
+@font-face {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 body {
   color: #30373B; }
   body .title {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
     font-size: 32px;
-    margin: 5% 0 0 5%;
-    width: 50%;
-    border: 3px solid #A7A7A7;
+    width: 60%;
+    margin: auto;
+    margin-top: 6%;
     padding: 10px;
     text-align: center;
     vertical-align: middle; }
+  body hr {
+    width: 2%;
+    background-color: #7AB55C;
+    color: #7AB55C;
+    border: solid 1px #7AB55C; }
   body .subtitle {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     font-size: 20px;
-    border-color: #A7A7A7; }
+    width: 60%;
+    margin: auto;
+    padding: 10px 10px 30px 10px;
+    text-align: center;
+    vertical-align: middle; }
   body .body {
-    font-size: 13px; }
-  body .emailForm {
-    font-size: 16px; }
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    width: 35%;
+    margin: auto;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle; }
+    body .body .emailForm {
+      font-size: 16px;
+      box-sizing: border-box; }
+      body .body .emailForm .emailField {
+        font-size: 16px;
+        width: 72%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #A7A7A7;
+        border-radius: 2px;
+        box-sizing: border-box; }
 
 /*# sourceMappingURL=styles.css.map */
