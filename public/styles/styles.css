@@ -62,6 +62,9 @@ body {
         color: white;
         border: none;
         cursor: pointer;
+        outline: none;
         float: left; }
+    body .form .alert {
+      color: #C23628; }
 
 /*# sourceMappingURL=styles.css.map */

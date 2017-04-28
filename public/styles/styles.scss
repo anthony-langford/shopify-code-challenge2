@@ -85,8 +85,12 @@ body {
         color: white;
         border: none;
         cursor: pointer;
+        outline: none;
         float: left;
       }
+    }
+    .alert {
+      color: $error-color;
     }
   }
 }
