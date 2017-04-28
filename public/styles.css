@@ -6,14 +6,14 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 400;
     font-size: 32px;
-    width: 60%;
+    width: 80%;
     margin: auto;
     margin-top: 6%;
     padding: 10px;
     text-align: center;
     vertical-align: middle; }
   body hr {
-    width: 2%;
+    width: 1%;
     background-color: #7AB55C;
     color: #7AB55C;
     border: solid 1px #7AB55C; }
@@ -21,7 +21,7 @@ body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     font-size: 20px;
-    width: 60%;
+    width: 80%;
     margin: auto;
     padding: 10px 10px 30px 10px;
     text-align: center;
@@ -30,22 +30,38 @@ body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 600;
     font-size: 13px;
-    width: 35%;
-    margin: auto;
-    padding: 10px;
-    text-align: left;
-    vertical-align: middle; }
-    body .body .emailForm {
+    width: 90%;
+    max-width: 600px;
+    margin: auto; }
+  body .form {
+    width: 90%;
+    max-width: 600px;
+    margin: auto; }
+    body .form .emailForm {
       font-size: 16px;
-      box-sizing: border-box; }
-      body .body .emailForm .emailField {
+      text-align: center;
+      overflow: hidden; }
+      body .form .emailForm .emailField {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
         font-size: 16px;
-        width: 72%;
+        width: 70%;
+        height: 50px;
+        margin: 8px 0px 8px 0px;
         padding: 12px 20px;
-        margin: 8px 0;
         display: inline-block;
         border: 1px solid #A7A7A7;
         border-radius: 2px;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+        outline: none;
+        float: left; }
+      body .form .emailForm .submitButton {
+        width: 30%;
+        height: 50px;
+        margin: 8px 0px 0px -2px;
+        background-color: #7AB55C;
+        color: white;
+        border: none;
+        cursor: pointer;
+        float: left; }
 
 /*# sourceMappingURL=styles.css.map */

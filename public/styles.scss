@@ -8,17 +8,20 @@ $title-font-size: 32px;
 $subtitle-font-size: 20px;
 $form-font-size: 16px;
 
+$font-stack: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
 @font-face {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: $font-stack;
 }
 
 body {
   color: $text-color;
+
   .title {
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 400;
     font-size: $title-font-size;
-    width: 60%;
+    width: 80%;
     margin: auto;
     margin-top: 6%;
     padding: 10px;
@@ -26,46 +29,64 @@ body {
     vertical-align: middle;
   }
   hr {
-    width: 2%;
+    width: 1%;
     background-color: $success-color;
     color: $success-color;
     border: solid 1px $success-color;
   }
   .subtitle {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: $font-stack;
     font-weight: 300;
     font-size: $subtitle-font-size;
-    width: 60%;
+    width: 80%;
     margin: auto;
     padding: 10px 10px 30px 10px;
     text-align: center;
     vertical-align: middle;
   }
   .body {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: $font-stack;
     font-weight: 600;
     font-size: $body-font-size;
-    width: 35%;
+    width: 90%;
+    max-width: 600px;
     margin: auto;
-    padding: 10px;
-    text-align: left;
-    vertical-align: middle;
+  }
+
+  .form {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
 
     .emailForm {
       font-size: $form-font-size;
-      box-sizing: border-box;
+      text-align: center;
+      overflow: hidden;
+
       .emailField {
+        font-family: $font-stack;
         font-size: $form-font-size;
-        width: 72%;
+        width: 70%;
+        height: 50px;
+        margin: 8px 0px 8px 0px;
         padding: 12px 20px;
-        margin: 8px 0;
         display: inline-block;
         border: 1px solid $border-color;
         border-radius: 2px;
         box-sizing: border-box;
+        outline: none;
+        float: left;
+      }
+      .submitButton {
+        width: 30%;
+        height: 50px;
+        margin: 8px 0px 0px -2px;
+        background-color: $success-color;
+        color: white;
+        border: none;
+        cursor: pointer;
+        float: left;
       }
     }
-
   }
-
 }
